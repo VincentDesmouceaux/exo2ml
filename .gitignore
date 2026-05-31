@@ -1,0 +1,54 @@
+cat > .gitignore <<'EOF'
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Environnements virtuels
+.venv/
+venv/
+env/
+ENV/
+
+# PyCharm / JetBrains
+.idea/
+*.iml
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Données / fichiers lourds
+data/
+datasets/
+*.csv
+*.xlsx
+*.xls
+*.parquet
+*.pkl
+*.joblib
+*.h5
+
+# Modèles / outputs ML
+models/
+outputs/
+artifacts/
+runs/
+mlruns/
+
+# Logs
+*.log
+logs/
+
+# macOS
+.DS_Store
+
+# Tests / coverage
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Variables d'environnement
+.env
+.env.*
+EOF
